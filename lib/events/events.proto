@@ -740,6 +740,10 @@ message TrustedClusterCreate {
     // ResourceMetadata is a common resource event metadata
     ResourceMetadata Resource = 2
         [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
+
+    // User is a common user event metadata
+    UserMetadata User = 3
+        [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
 }
 
 // TrustedClusterDelete is the event for removing a trusted cluster.
@@ -750,6 +754,10 @@ message TrustedClusterDelete {
 
     // ResourceMetadata is a common resource event metadata
     ResourceMetadata Resource = 2
+        [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
+
+    // User is a common user event metadata
+    UserMetadata User = 3
         [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
 }
 
@@ -804,6 +812,10 @@ message OIDCConnectorCreate {
     // ResourceMetadata is a common resource event metadata
     ResourceMetadata Resource = 2
         [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
+
+    // User is a common user event metadata
+    UserMetadata User = 3
+        [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
 }
 
 // OIDCConnectorDelete fires when OIDC connector is deleted.
@@ -814,6 +826,10 @@ message OIDCConnectorDelete {
 
     // ResourceMetadata is a common resource event metadata
     ResourceMetadata Resource = 2
+        [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
+
+    // User is a common user event metadata
+    UserMetadata User = 3
         [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
 }
 
@@ -826,6 +842,10 @@ message SAMLConnectorCreate {
     // ResourceMetadata is a common resource event metadata
     ResourceMetadata Resource = 2
         [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
+
+    // User is a common user event metadata
+    UserMetadata User = 3
+        [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
 }
 
 // SAMLConnectorDelete fires when SAML connector is deleted.
@@ -836,6 +856,10 @@ message SAMLConnectorDelete {
 
     // ResourceMetadata is a common resource event metadata
     ResourceMetadata Resource = 2
+        [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
+
+    // User is a common user event metadata
+    UserMetadata User = 3
         [ (gogoproto.nullable) = false, (gogoproto.embed) = true, (gogoproto.jsontag) = "" ];
 }
 
